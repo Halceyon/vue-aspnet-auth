@@ -1,0 +1,35 @@
+{
+  "name": "vue-aspnet-auth",
+  "version": "1.0.0",
+  "description": "Vue plugin for auth to OWIN MVC",
+  "main": "dist/vue-aspnet-auth.js",
+  "module": "dist/vue-aspnet-auth.es2015.js",
+  "unpkg": "dist/vue-aspnet-auth.min.js",
+  "scripts": {
+    "build": "node rollup.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Halceyon/vue-aspnet-auth.git"
+  },
+  "keywords": [
+    "vue",
+    "aspnet",
+    "auth",
+    "owin"
+  ],
+  "author": "Craig Pretorius <craigp@codehq.co.za>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Halceyon/vue-aspnet-auth/issues"
+  },
+  "homepage": "https://github.com/Halceyon/vue-aspnet-auth#readme",
+  "devDependencies": {
+    "fs": "0.0.1-security",
+    "rollup": "^0.52.0",
+    "rollup-plugin-buble": "^0.18.0",
+    "uglify-js": "^3.2.0"
+  },
+  "dependencies": {}
+}
