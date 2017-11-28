@@ -1,3 +1,6 @@
-import aspNetAuth from './aspnetAuth';
-
-export { aspNetAuth as AspNetAuth };
+import aspnetAuth from './aspnetAuth';
+export const AspnetAuth = {
+  install(Vue) {
+    Vue.prototype.$auth = aspnetAuth;
+  }
+}

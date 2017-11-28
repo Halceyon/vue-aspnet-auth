@@ -32,7 +32,7 @@ function saveAuth(result) {
     createCookie("apnetAuth", JSON.stringify(result));
 }
 
-const aspnetAuth = {
+var aspnetAuth = {
     authentication: null,
     user: {},
     url: "",
@@ -199,4 +199,4 @@ function fillAuth() {
 }
 
 fillAuth();
-export const AspnetAuth = { aspnetAuth }; 
+export default aspnetAuth;
