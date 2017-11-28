@@ -204,5 +204,16 @@ function createCookie(name, value, seconds) {
 
     fillAuth();
 
-export { aspnetAuth };
+function install(Vue, options) {
+    options = Object.assign({}, {
+      installComponents: true,
+    }, options);
+  
+    Vue.use(DeferredReady);
+  
+    var defaultResizeBus = new Vue();
+    Vue.prototype.$auth = aspnetAuth;
+}
+
+export { install };
 export { Url, Http, Resource };
