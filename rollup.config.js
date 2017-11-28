@@ -11,7 +11,7 @@ const banner =
     ' */\n';
 
 rollup.rollup({
-  input: 'src/main.js',
+  input: 'src/aspnetAuth.js',
   plugins: [buble()],
   globals: {
     vue: 'Vue',
