@@ -1,6 +1,6 @@
 {
   "name": "vue-aspnet-auth",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Vue plugin for auth to OWIN MVC",
   "main": "src/main.js",
   "scripts": {
