@@ -1,5 +1,5 @@
 /*!
- * vue-aspnet-auth v1.0.2
+ * vue-aspnet-auth v1.0.3
  * Copyright Code HQ (Pty) Ltd.
  */
 
