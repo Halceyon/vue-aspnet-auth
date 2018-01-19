@@ -1,5 +1,5 @@
 /*!
- * vue-aspnet-auth v1.0.3
+ * vue-aspnet-auth v1.0.6
  * Copyright Code HQ (Pty) Ltd.
  */
 
@@ -204,5 +204,12 @@ function fillAuth() {
 
 fillAuth();
 
-export default aspnetAuth;
+var AspnetAuth = {
+  install: function install(Vue) {
+    Vue.prototype.$auth = aspnetAuth;
+    window.aspnetAuth = aspnetAuth;
+  }
+};
+
+export { AspnetAuth };
 export { Url, Http, Resource };

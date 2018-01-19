@@ -1,9 +1,11 @@
 /*!
- * vue-aspnet-auth v1.0.3
+ * vue-aspnet-auth v1.0.6
  * Copyright Code HQ (Pty) Ltd.
  */
 
 'use strict';
+
+Object.defineProperty(exports, '__esModule', { value: true });
 
 function createCookie(name, value, seconds) {
     var expires;
@@ -206,4 +208,11 @@ function fillAuth() {
 
 fillAuth();
 
-module.exports = aspnetAuth;
+var AspnetAuth = {
+  install: function install(Vue) {
+    Vue.prototype.$auth = aspnetAuth;
+    window.aspnetAuth = aspnetAuth;
+  }
+};
+
+exports.AspnetAuth = AspnetAuth;

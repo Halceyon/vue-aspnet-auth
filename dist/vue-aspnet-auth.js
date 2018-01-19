@@ -1,13 +1,13 @@
 /*!
- * vue-aspnet-auth v1.0.3
+ * vue-aspnet-auth v1.0.6
  * Copyright Code HQ (Pty) Ltd.
  */
 
 (function (global, factory) {
-	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
-	typeof define === 'function' && define.amd ? define(factory) :
-	(global.VueAspnetAuth = factory());
-}(this, (function () { 'use strict';
+	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
+	typeof define === 'function' && define.amd ? define(['exports'], factory) :
+	(factory((global.VueAspnetAuth = {})));
+}(this, (function (exports) { 'use strict';
 
 function createCookie(name, value, seconds) {
     var expires;
@@ -210,6 +210,15 @@ function fillAuth() {
 
 fillAuth();
 
-return aspnetAuth;
+var AspnetAuth = {
+  install: function install(Vue) {
+    Vue.prototype.$auth = aspnetAuth;
+    window.aspnetAuth = aspnetAuth;
+  }
+};
+
+exports.AspnetAuth = AspnetAuth;
+
+Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
