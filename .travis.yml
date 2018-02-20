@@ -1,9 +1,27 @@
 sudo: false
+branches:
+  only:
+  - master
 language: node_js
+notifications:
+  email:
+    on_success: always
+    on_failure: change
+cache:
+  directories:
+    - node_modules
 node_js:
-  - '6'
-script:
-  - npm run lint
-  - npm run test:cover
+  - '9'
+install:
+  - npm install
 after_success:
-  - npm run coveralls
+  - npm run build
+before_deploy:
+  - cd dist
+deploy:
+  provider: npm
+  email: craigp@codehq.co.za
+  skip_cleanup: true
+  api_key: $NPM_TOKEN
+  on:
+    branch: master
