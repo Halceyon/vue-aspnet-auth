@@ -1,6 +1,12 @@
 # vs 2017
 .vs
 
+# vscode
+.vscode
+
+# app specific
+dist/
+
 # Logs
 logs
 *.log
