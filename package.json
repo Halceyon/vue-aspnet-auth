@@ -47,7 +47,7 @@
     "babel-register": "^6.16.3",
     "browser-cookies": "^1.2.0",
     "chai": "^4.0.0-canary.1",
-    "coveralls": "^2.11.14",
+    "coveralls": "^2.13.3",
     "del": "^2.2.2",
     "eslint": "^3.19.0",
     "eslint-config-airbnb-base": "^10.0.1",
@@ -59,13 +59,15 @@
     "semantic-release": "^12.4.1",
     "sinon": "^2.0.0-pre.3",
     "sinon-stub-promise": "^4.0.0",
-    "vue": "^2.5.13",
-    "travis-deploy-once": "^4.3.4"
+    "travis-deploy-once": "^4.3.4",
+    "vue": "^2.5.13"
   },
   "scripts": {
     "build": "node tools/build",
     "test": "mocha --compilers js:babel-register",
+    "test:cover": "babel-node ./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha",
     "travis-deploy-once": "travis-deploy-once",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "coveralls": "type /coverage/lcov.info | coveralls"
   }
 }
