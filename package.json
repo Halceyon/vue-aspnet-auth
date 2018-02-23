@@ -1,6 +1,6 @@
 {
   "name": "vue-aspnet-auth",
-  "version": "1.2.0-development",
+  "version": "0.0.0-development",
   "description": "Vue plugin for auth to OWIN MVC",
   "repository": {
     "type": "git",
@@ -68,6 +68,6 @@
     "test:cover": "babel-node ./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha",
     "travis-deploy-once": "travis-deploy-once",
     "semantic-release": "semantic-release",
-    "coveralls": "type /coverage/lcov.info | coveralls"
+    "coveralls": "cat ./coverage/lcov.info | coveralls"
   }
 }
