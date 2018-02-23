@@ -1,10 +1,10 @@
 {
   "name": "vue-aspnet-auth",
-  "version": "1.1.1",
+  "version": "0.0.0-development",
   "description": "Vue plugin for auth to OWIN MVC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Halceyon/vue-aspnet-auth.git"
+    "url": "https://github.com/Halceyon/vue-aspnet-auth.git"
   },
   "keywords": [
     "vue",
@@ -45,15 +45,27 @@
     "babel-preset-latest": "^6.16.0",
     "babel-preset-stage-0": "^6.16.0",
     "babel-register": "^6.16.3",
+    "browser-cookies": "^1.2.0",
+    "chai": "^4.0.0-canary.1",
+    "coveralls": "^2.11.14",
     "del": "^2.2.2",
     "eslint": "^3.19.0",
     "eslint-config-airbnb-base": "^10.0.1",
     "eslint-plugin-import": "^2.2.0",
     "istanbul": "^1.1.0-alpha.1",
+    "mocha": "^3.1.2",
     "rollup": "^0.36.3",
-    "rollup-plugin-babel": "^2.6.1"
+    "rollup-plugin-babel": "^2.6.1",
+    "semantic-release": "^12.4.1",
+    "sinon": "^2.0.0-pre.3",
+    "sinon-stub-promise": "^4.0.0",
+    "vue": "^2.5.13",
+    "travis-deploy-once": "^4.3.4"
   },
   "scripts": {
-    "build": "node tools/build"
+    "build": "node tools/build",
+    "test": "mocha --compilers js:babel-register",
+    "travis-deploy-once": "travis-deploy-once",
+    "semantic-release": "semantic-release"
   }
 }
