@@ -16,13 +16,5 @@ install:
   - npm install
 after_success:
   - npm run build
-  - npm run travis-deploy-once "npm run semantic-release"
-before_deploy:
   - cd dist
-deploy:
-  provider: npm
-  email: craigp@codehq.co.za
-  skip_cleanup: true
-  api_key: $NPM_TOKEN
-  on:
-    branch: master
+  - npm run travis-deploy-once "npm run semantic-release"
