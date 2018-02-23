@@ -9,6 +9,8 @@ notifications:
     on_failure: change
 node_js:
   - '9'
+before_install:
+  - npm i -g npm@^2.0.0
 install:
   - npm install
   - npm install -g codecov
