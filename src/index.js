@@ -7,9 +7,9 @@
  * LICENSE.txt file in the root directory of this source tree.
  */
 
-import aspnetAuth from 'aspnet-auth';
+import AspnetAuth from 'aspnet-auth';
 export const AspnetAuth = {
   install(Vue) {
-    Vue.prototype.$auth = aspnetAuth;
+    Vue.prototype.$auth = AspnetAuth;
   }
 }
