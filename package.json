@@ -1,6 +1,6 @@
 {
   "name": "vue-aspnet-auth",
-  "version": "0.0.0-development",
+  "version": "1.2.0-development",
   "description": "Vue plugin for auth to OWIN MVC",
   "repository": {
     "type": "git",
