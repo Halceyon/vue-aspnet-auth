@@ -58,7 +58,7 @@ export default {
 ### License
 
 Copyright © 2018 Code HQ (Pty) Ltd. This source code is licensed under the MIT license found in
-the [LICENSE.txt](https://github.com/halceyon/vue-aspnet-auth/blob/master/LICENSE) file.
+the [LICENSE](https://github.com/halceyon/vue-aspnet-auth/blob/master/LICENSE) file.
 
 
 ---
