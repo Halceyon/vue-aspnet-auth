@@ -18,8 +18,8 @@
     "url": "https://github.com/Halceyon/vue-aspnet-auth/issues"
   },
   "homepage": "https://github.com/Halceyon/vue-aspnet-auth#readme",
-  "main": "vue-aspnet-auth.js",
-  "jsnext:main": "vue-aspnet-auth.es.js",
+  "main": "dist/vue-aspnet-auth.js",
+  "jsnext:main": "dist/vue-aspnet-auth.es.js",
   "babel": {
     "presets": [
       "latest",
