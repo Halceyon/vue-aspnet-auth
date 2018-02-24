@@ -9,9 +9,7 @@
 
 import aspnetAuth from 'aspnet-auth';
 export const AspnetAuth = {
-  install(Vue) {
-    Vue.prototype.$auth = new aspnetAuth({
-      url: 'http://localhost'
-    });
+  install(Vue, options) {
+    Vue.prototype.$auth = new aspnetAuth(options);
   }
 }

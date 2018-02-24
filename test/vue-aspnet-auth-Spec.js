@@ -17,10 +17,16 @@ describe('vue-aspnet-auth', () => {
 
   before(() => {
     sinon.stub(cookies, 'get').returns(null);
-    Vue.use(AspnetAuth);
+    Vue.use(AspnetAuth, {
+      url: 'http://localhost'
+    });
   });
   after(() => {
     cookies.get.restore();
+  });
+
+  it('should receive the url as an option', () => {
+    expect(Vue.prototype.$auth.options.url).to.eq('http://localhost');
   });
 
   it('attached itself to vue as $auth', () => {
