@@ -4,9 +4,6 @@
 # vscode
 .vscode
 
-# app specific
-dist/
-
 # Logs
 logs
 *.log
