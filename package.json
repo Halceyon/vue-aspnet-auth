@@ -34,7 +34,7 @@
     "extends": "airbnb-base"
   },
   "dependencies": {
-    "aspnet-auth": "^1.0.1",
+    "aspnet-auth": "^1.1.2",
     "babel-runtime": "^6.11.6"
   },
   "devDependencies": {
