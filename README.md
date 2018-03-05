@@ -20,7 +20,10 @@ Import and initialize the plugin.
 ```javascript
 import { AspnetAuth } from 'vue-aspnet-auth';
 
-Vue.use(AspnetAuth);
+Vue.use(AspnetAuth, {
+  url: 'http://localhost:46993',
+});
+
 ```
 Basic login example:
 ```javascript
