@@ -34,7 +34,7 @@
     "extends": "airbnb-base"
   },
   "dependencies": {
-    "aspnet-auth": "^1.1.2",
+    "aspnet-auth": "^1.1.4",
     "babel-runtime": "^6.11.6"
   },
   "devDependencies": {
@@ -51,12 +51,12 @@
     "del": "^3.0.0",
     "eslint": "^4.18.1",
     "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-import": "^2.9.0",
     "istanbul": "^1.1.0-alpha.1",
     "json-stable-stringify": "^1.0.1",
-    "mocha": "^5.0.1",
+    "mocha": "^5.0.4",
     "parse-json": "^4.0.0",
-    "rollup": "^0.56.2",
+    "rollup": "^0.56.5",
     "rollup-plugin-babel": "^3.0.3",
     "semantic-release": "^12.4.1",
     "sinon": "^4.4.0",

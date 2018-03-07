@@ -14,12 +14,9 @@ var aspnetAuth = _interopDefault(require('aspnet-auth'));
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 var AspnetAuth = {
-  install: function install(Vue) {
-    Vue.prototype.$auth = new aspnetAuth({
-      url: 'http://localhost'
-    });
+  install: function install(Vue, options) {
+    Vue.prototype.$auth = new aspnetAuth(options);
   }
 };
 
