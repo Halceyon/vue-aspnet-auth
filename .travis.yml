@@ -9,6 +9,7 @@ notifications:
     on_failure: change
 node_js:
   - '9'
+  - '10'
 before_install:
   - npm i -g npm@^2.0.0
 install:
