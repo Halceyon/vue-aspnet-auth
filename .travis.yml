@@ -24,6 +24,7 @@ after_success:
   - npm run coveralls
   - bash <(curl -s https://codecov.io/bash)
   - npm run semantic-release
+  - npm publish
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
