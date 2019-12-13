@@ -62,7 +62,7 @@
     "sinon": "^6.0.0",
     "sinon-stub-promise": "^4.0.0",
     "travis-deploy-once": "^5.0.0",
-    "vue": "^2.5.13"
+    "vue": "^2.6.11"
   },
   "scripts": {
     "build": "node tools/build",
