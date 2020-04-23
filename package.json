@@ -47,7 +47,7 @@
     "babel-register": "^6.16.3",
     "browser-cookies": "^1.2.0",
     "chai": "^4.0.0-canary.1",
-    "coveralls": "^3.0.3",
+    "coveralls": "^3.0.14",
     "del": "^3.0.0",
     "eslint": "^4.9.0",
     "eslint-config-airbnb-base": "^12.1.0",
